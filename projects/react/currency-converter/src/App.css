@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ysabeau Office", sans-serif;
+}
+.content {
+  height: 100vh;
+  width: 100vw;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  height: 50%;
+  width: 65%;
+  background-color: rgb(118, 226, 226);
+  gap: 5%;
+  border-radius: 2vw;
+}
+.logo {
+  background-color: transparent;
+  margin: 1.2vh 1.2vw;
+}
+.heading {
+  position: absolute;
+  top: 1.2vh;
+  left: 7vw;
+  font-size: 2vw;
+}
+.input{
+  display: flex;
+  padding: 2vw;
+  gap: 4vw;
+  flex-wrap: wrap;
+}
+.amount,
+.fromCurrency,
+.toCurrency {
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5vw; 
+}
+.amount input,
+.fromCurrency select,
+.toCurrency select {
+  width: 15vw;   /* adjust width as needed */
+  height: 6vh;   /* adjust height as needed */
+  font-size: 1.4vw;
+  border: transparent;
+}
+.result{
+   padding: 1.3vw;
+   width: 30vw;
+   margin-left: 2vw;
+   margin-top: 3vh;
+   font-size: 1.5vw;
+   background-color: azure;
+   border-radius: 0.7vw;
+}
+.result span{
+  font-weight: bolder;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 2vw;
+    border-radius: 4vw;
+  }
+
+  .heading {
+    font-size: 5vw;
+    left: 11%;
+    top: 2vh;
+  }
+
+  .input {
+    flex-direction: column;
+    gap: 4vh;
+    padding: 4vw;
+  }
+
+  .amount input,
+  .fromCurrency select,
+  .toCurrency select {
+    width: 80vw;
+    height: 8vh;
+    font-size: 4vw;
+  }
+
+  .result {
+    width: 80vw;
+    font-size: 4vw;
+    margin-left: 3vw;
+    margin-top: 4vh;
+    padding: 3.4vw;
+    border-radius: 2vw;
+  }
+}
